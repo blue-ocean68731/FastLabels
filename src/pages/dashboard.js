@@ -4,6 +4,7 @@ import Shield from "../assets/images/check-shield-white.png";
 import Rshipfoed from "../assets/images/first-class-icon-white.png";
 import Eco from "../assets/images/promise-eco-icon.png";
 import StarGreen from "../assets/images/tp-logo_star.svg";
+import StarDrak from "../assets/images/tp-logo_star_dark.svg";
 import StarRating from "../assets/images/starrating.svg";
 import VideoImage from "../assets/images/video-image-1.jpg";
 import PlayButton from "../assets/images/play-button.png";
@@ -16,6 +17,7 @@ import ISO9001 from "../assets/images/ISO9001-ISO14001.jpg";
 import LabelZero from "../assets/images/labelszero2landfill.png";
 import Xeikon from "../assets/images/xeikon-large.png";
 import Bpif from "../assets/images/bpif.png";
+import Tick from "../assets/images/tick.svg";
 
 import Promises1 from "../components/dashboard/Promises1";
 import Promises2 from "../components/dashboard/Promises2";
@@ -296,7 +298,7 @@ const Dashboard = () => {
                             <div className="h-[190px] w-1/2 float-left text-center px-[10px]">
                                     <img src={Xeikon}/>
                                 </div>
-                            <div className="h-[190px] w-1/2 float-left text-center px-[10px]">
+                            <div className="h-[320px] w-1/2 float-left text-center px-[10px]">
                                     <img src={Bpif}/>
                                 </div>
                             
@@ -304,7 +306,87 @@ const Dashboard = () => {
                     </div>
                 </div> 
             </div>
-            <div className="w-full"></div>           
+            <div className="w-full bg-[#f5f4f5]">
+                <div className="w-auto xl:w-[1200px] lg:w-[970px] md:w-[750px] mx-auto">
+                    <div className="w-full relative float-left md:w-1/2 xl:w-[60%] md:px-0 px-4">
+                        <div className="float-left w-full ">
+                            <span className="bg-[#00a0d3] float-left text-white font-semibold text-center w-full py-4 mb-4">BEHIND THE SCENES: SEE THE PROCESS FROM START TO FINISH</span>
+                            <div className="w-full h-60 relative float-left mb-8 bg-[#DDD]  ">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div className="w-full relative float-left md:w-1/2 xl:w-[40%] px-4 ">
+                        <div className="float-left w-full">
+                            <span className="bg-[#d63892] float-left text-white font-semibold text-center w-full uppercase py-4 mb-4">latest customer comments</span>
+                            <div className=" w-full relative float-left bg-white p-[10px] box-border ">
+                                <div className="relative flex flex-col text-sm h-full mx-auto max-w-[750px]">
+                                    <div className="py-5 flex-shrink-0 relative text-center">
+                                        <div className=" inline-block mx-[6px] align-middle ">
+                                            <h1 className=" text-2xl font-medium align-baseline ">Excellent</h1>
+                                        </div>
+                                        <div className="inline-block mx-[6px] align-middle ">
+                                            <img className="w-full h-[25px] relative" src={StarRating} />
+                                        </div>
+                                    </div>
+                                    <div className="text-center">
+                                        <a className="text-sm inline-block mx-[3px] mb-[6px] align-bottom text-[#191919] text-center">
+                                            <span className="relative float-left">Based on 2,512 reviews on </span>
+                                            <img className="w-20 h-5 relative float-left" src={StarDrak} />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div className="overflow-y-auto m-0 p-0">
+                                    <div className="my-4 block text-[#727273] font-normal text-sm text-left">Showing our 5 star reviews</div>
+                                    <div className="w-full flex flex-col text-left rounded-sm overflow-hidden p-4 relative break-words border-b-2 mb-4">
+                                        <div>
+                                            <img className="w-[100px] h-[20] relative float-left" src={StarRating} />
+                                            <div className=" text-[#6c6c85]">
+                                                <img className="w-[14px] h-[14px] relative float-left ml-2 mr-[3px] mt-1 " src={Tick}/>
+                                                <span className="text-sm">Verified</span>
+                                            </div>
+                                        </div>
+                                        <div className="flex flex-row text-xs my-2 text-[#6c6c85]">
+                                            <span className="font-extrabold text-ellipsis overflow-hidden whitespace-nowrap">Jake M,</span>
+                                            <span>17 hours age</span>
+                                        </div>
+                                        <div className="text-[#191919] text-sm font-bold leading-5 mb-3">
+                                            Very reliable and fast service
+                                        </div>
+                                        <div className="text-[#00b67a] cursor-pointer text-sm font-medium text-center">
+                                            <span>Read More</span>
+                                        </div>
+                                    </div>
+                                    <div className="w-full flex flex-col text-left rounded-sm overflow-hidden p-4 relative break-words border-b-2 mb-4">
+                                        <div>
+                                            <img className="w-[100px] h-[20] relative float-left" src={StarRating} />
+                                            <div className=" text-[#6c6c85]">
+                                                <img className="w-[14px] h-[14px] relative float-left ml-2 mr-[3px] mt-1 " src={Tick}/>
+                                                <span className="text-sm">Verified</span>
+                                            </div>
+                                        </div>
+                                        <div className="flex flex-row text-xs my-2 text-[#6c6c85]">
+                                            <span className="font-extrabold text-ellipsis overflow-hidden whitespace-nowrap">Jake M,</span>
+                                            <span>17 hours age</span>
+                                        </div>
+                                        <div className="text-[#191919] text-sm font-bold leading-5 mb-3">
+                                            Very reliable and fast service
+                                        </div>
+                                        <div className="text-[#00b67a] cursor-pointer text-sm font-medium text-center">
+                                            <span>Read More</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="w-full">
+                <div className="w-auto xl:w-[1200px] lg:w-[970px] md:w-[750px] mx-auto">
+                    
+                </div>
+            </div>           
         </div>
     )
 }
