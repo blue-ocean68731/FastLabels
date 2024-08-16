@@ -336,7 +336,7 @@ const Dashboard = () => {
                                         </a>
                                     </div>
                                 </div>
-                                <div className="overflow-y-auto m-0 p-0">
+                                <div className="overflow-y-auto m-0 p-0 h-48">
                                     <div className="my-4 block text-[#727273] font-normal text-sm text-left">Showing our 5 star reviews</div>
                                     <div className="w-full flex flex-col text-left rounded-sm overflow-hidden p-4 relative break-words border-b-2 mb-4">
                                         <div>
@@ -384,7 +384,7 @@ const Dashboard = () => {
             </div>
             <div className="w-full">
                 <div className="w-auto xl:w-[1200px] lg:w-[970px] md:w-[750px] mx-auto">
-                    
+
                 </div>
             </div>           
         </div>
