@@ -1,6 +1,6 @@
 const Aboutus = () => {
     return (
-        <div>
+        <div className="">
             This is About Us page.
         </div>
     )

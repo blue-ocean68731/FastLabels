@@ -22,6 +22,9 @@ import Tick from "../assets/images/tick.svg";
 import Promises1 from "../components/dashboard/Promises1";
 import Promises2 from "../components/dashboard/Promises2";
 import Header from "../components/Header";
+import Tabs from "../components/dashboard/Tabs";
+import IncOverview from "../components/dashboard/IncOverview";
+import LatestBlog from "../components/dashboard/LatestBlog";
 
 /**
  * An array of objects representing the promises or guarantees offered by the label printing service.
@@ -311,7 +314,7 @@ const Dashboard = () => {
                     <div className="w-full relative float-left md:w-1/2 xl:w-[60%] md:px-0 px-4">
                         <div className="float-left w-full ">
                             <span className="bg-[#00a0d3] float-left text-white font-semibold text-center w-full py-4 mb-4">BEHIND THE SCENES: SEE THE PROCESS FROM START TO FINISH</span>
-                            <div className="w-full h-60 relative float-left mb-8 bg-[#DDD]  ">
+                            <div className="w-full h-72 relative float-left mb-8 bg-[#DDD]  ">
 
                             </div>
                         </div>
@@ -383,8 +386,15 @@ const Dashboard = () => {
                 </div>
             </div>
             <div className="w-full">
-                <div className="w-auto xl:w-[1200px] lg:w-[970px] md:w-[750px] mx-auto">
-
+                <div className="w-auto xl:w-[1200px] lg:w-[970px] md:w-[750px] mx-auto my-10">
+                    <Tabs />
+                    <IncOverview />
+                </div>
+                
+            </div>
+            <div className="w-full">
+                <div className="w-auto xl:w-[1200px] lg:w-[970px] md:w-[750px] mx-auto my-10">
+                    <LatestBlog />
                 </div>
             </div>           
         </div>
