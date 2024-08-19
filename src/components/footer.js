@@ -34,7 +34,7 @@ const sellData = [
 
 const Footer = () => {
     return (
-        <div className="w-full flex flex-col">
+        <div className="w-full flex flex-col mt-8">
             <div className="w-full footer-background py-14 xl:py-24">
                 <div className="w-auto xl:w-[1200px] lg:w-[970px] md:w-[750px] mx-auto">
                     <div className="flex flex-col xl:flex-row w-full gap-12 xl:gap-4 text-white ">
