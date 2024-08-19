@@ -70,7 +70,7 @@ const Dashboard = () => {
     return(
         <div className="flex flex-col">
             <div className="w-full flex flex-col header-background-1">
-                <Header />
+                <Header index={0}/>
                 <div className="w-full flex flex-col pb-8">
                     <div className=" w-auto xl:w-[1200px] lg:w-[970px] md:w-[750px] mx-auto">
                         <div className="text-white text-center ">

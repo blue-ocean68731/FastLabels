@@ -21,10 +21,9 @@ function App() {
 
 function AppContent() {
   const location = useLocation();
-  
   return (
     <div className="App">
-      {location.pathname !== "/" && <Header />}
+      {location.pathname !== "/" && <Header index={1} />}
       <Routes>
         <Route path="/" element={<Dashboard />} />
         <Route path="/company/" element={<Aboutus />} /> 
