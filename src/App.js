@@ -13,14 +13,14 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App header-background">
       <BrowserRouter>
         <Header />
         <Routes>
           <Route path="/" element={<Dashboard />} />
           <Route path="/company/" element={<Aboutus />} /> 
           <Route path="/requests-sample-pack" element={<Requestsample />} /> 
-          <Route path="/our-equipment" element={<Equipment />} /> 
+          <Route path="/company/our-equipment" element={<Equipment />} /> 
           <Route path="/testimonials" element={<Reviews />} /> 
           <Route path="/sign-in" element={<Reorder />} /> 
           <Route path="/contact" element={<Contactus />} /> 

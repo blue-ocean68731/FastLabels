@@ -69,7 +69,7 @@ const promisesData = [
 const Dashboard = () => {
     return(
         <div className="flex flex-col">
-            <div className="w-full flex flex-col header-background pb-8">
+            <div className="w-full flex flex-col pb-8">
                 <div className=" w-auto xl:w-[1200px] lg:w-[970px] md:w-[750px] mx-auto">
                     <div className="text-white text-center ">
                         <h1 className="capitalize font-sans font text-[32px] mt-[60px] mb-4  md:text-[44px] md:mt-[80px] lg:text-[32px] lg:mt-[60px] xl:text-[52px] xl:mt-20 2xl:text-[60px] 2xl:mt-[120px] ">

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import imgAccount from "../../assets/images/account.svg";
 
 const Account = (props) => {
@@ -7,7 +8,7 @@ const Account = (props) => {
                 <img className="md:float-left" src={imgAccount} />
                 <div className="relative float-left ml-2">
                     <span className="font-sans font-semibold text-white inline-block leading-5 text-lg">
-                        {props.mediumText}&nbsp;
+                        <Link to="/sign-in">{props.mediumText}&nbsp;</Link>
                     </span>
                 </div>
             </a>
