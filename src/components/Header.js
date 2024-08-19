@@ -8,7 +8,7 @@ import Account from "./header/Login";
 
 const Header = () => {
     return(
-        <div className="py-4 block box-border w-full">
+        <div className="py-4 block box-border w-full header-background">
             <div className="w-auto xl:w-[1200px] lg:w-[970px] sm:w-[750px] mx-auto px-4 box-border inline-block relative">
                 <div className="header-top">
                     <div className=" w-full float-left relative">

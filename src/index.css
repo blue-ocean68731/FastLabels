@@ -20,7 +20,13 @@ code {
   background-image: url(../src/assets/img/308-background.jpg);
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: contain;
+  background-size: cover;
+}
+.header-background-1{
+  background-image: url(../src/assets/img/308-background.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
 }
 
 .header-background-2{

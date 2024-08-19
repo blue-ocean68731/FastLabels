@@ -69,158 +69,161 @@ const promisesData = [
 const Dashboard = () => {
     return(
         <div className="flex flex-col">
-            <div className="w-full flex flex-col pb-8">
-                <div className=" w-auto xl:w-[1200px] lg:w-[970px] md:w-[750px] mx-auto">
-                    <div className="text-white text-center ">
-                        <h1 className="capitalize font-sans font text-[32px] mt-[60px] mb-4  md:text-[44px] md:mt-[80px] lg:text-[32px] lg:mt-[60px] xl:text-[52px] xl:mt-20 2xl:text-[60px] 2xl:mt-[120px] ">
-                            Labels-Fast, Affordable Label Printing That Enhances Your Brand
-                        </h1>
-                    </div>
-                    <div className="text-white">
-                        <h2 className=" py-[30px] text-2xl md:text-[20px] xl:text-[28px] ">From one of the UK's largest label printing providers</h2>
-                    </div>
-                    <div className="text-white">
-                        <h3 className=" text-lg xl:text-[22px] font-light my-[22px] ">We make labels in any bespoke size with high-resolution printing, rapid turnaround and free next-day delivery after dispatch available. This gives you labels and stickers that tick every box for some of the UK's lowest prices. We even include a reprint or refund quality guarantee for complete peace of mind.</h3>
-                    </div>
-                </div>
-                <div className="w-full bg-[#00a0d2]">
-                    <div className="w-auto xl:w-[1200px] lg:w-[970px] md:w-[750px] mx-auto hidden xl:flex justify-between items-center py-5 ">
-                        <div className="w-auto float-left relative">
-                            <span className="float-left font-bold leading-10 mr-4 text-white">1).</span>
-                            <select className=" w-48 h-10 px-4 outline-none rounded-md text-lg float-left relative ">
-                                <option value style={{display:"none"}}>Choose a shape</option>
-                                <option value="Square">Square</option>
-                                <option value="Circle" >Circle</option>
-                                <option value="Rectangle" >Rectangle</option>
-                                <option value="Oval" >Oval</option>
-                                <option value="Custom Shape" >Custom Shape</option>
-                            </select>
+            <div className="w-full flex flex-col header-background-1">
+                <Header />
+                <div className="w-full flex flex-col pb-8">
+                    <div className=" w-auto xl:w-[1200px] lg:w-[970px] md:w-[750px] mx-auto">
+                        <div className="text-white text-center ">
+                            <h1 className="capitalize font-sans font text-[32px] mt-[60px] mb-4  md:text-[44px] md:mt-[80px] lg:text-[32px] lg:mt-[60px] xl:text-[52px] xl:mt-20 2xl:text-[60px] 2xl:mt-[120px] ">
+                                Labels-Fast, Affordable Label Printing That Enhances Your Brand
+                            </h1>
                         </div>
-                        <div className="w-auto float-left relative">
-                            <span className="float-left font-bold leading-10 mr-4 text-white">2).</span>
-                            <select className=" w-48 h-10 px-4 outline-none rounded-md text-lg float-left relative ">
-                                <option value style={{display:"none"}}>Choose a size</option>
-                                <option value="width=25&height=25">25*25mm</option>
-                                <option value="width=37&height=37">37*37mm</option>
-                                <option value="width=51&height=51">51*51mm</option>
-                                <option value="width=62&height=62">62*62mm</option>
-                            </select>
-                            <a className="text-white leading-10 text-xs">
-                                <span className="h-4 w-4 bg-[#1f5aff] font-bold leading-4 rounded-[50%] mx-1 px-1.5 ">i</span>
-                                size guide
-                            </a>
+                        <div className="text-white">
+                            <h2 className=" py-[30px] text-2xl md:text-[20px] xl:text-[28px] ">From one of the UK's largest label printing providers</h2>
                         </div>
-                        <span className="w-auto text-white text-base font-bold">
-                            <span className="mr-4">OR enter a custom size</span>
-                            <select className="outline-none h-7 w-20 rounded-lg text-black font-normal ">
-                                <option>mm</option>
-                                <option>cm</option>
-                                <option>inch</option>
-                            </select>
-                        </span>
-                        <div className="w-auto ">
-                            <div className="mr-4 float-left relative pt-1">
-                                <span className="float-left leading-8 mr-3 text-white text-sm font-bold ">W:</span>
-                                <input className="float-left h-8 w-12 px-4 text-center text-lg outline-none rounded-lg "/>
+                        <div className="text-white">
+                            <h3 className=" text-lg xl:text-[22px] font-light my-[22px] ">We make labels in any bespoke size with high-resolution printing, rapid turnaround and free next-day delivery after dispatch available. This gives you labels and stickers that tick every box for some of the UK's lowest prices. We even include a reprint or refund quality guarantee for complete peace of mind.</h3>
+                        </div>
+                    </div>
+                    <div className="w-full bg-[#00a0d2]">
+                        <div className="w-auto xl:w-[1200px] lg:w-[970px] md:w-[750px] mx-auto hidden xl:flex justify-between items-center py-5 ">
+                            <div className="w-auto float-left relative">
+                                <span className="float-left font-bold leading-10 mr-4 text-white">1).</span>
+                                <select className=" w-48 h-10 px-4 outline-none rounded-md text-lg float-left relative ">
+                                    <option value style={{display:"none"}}>Choose a shape</option>
+                                    <option value="Square">Square</option>
+                                    <option value="Circle" >Circle</option>
+                                    <option value="Rectangle" >Rectangle</option>
+                                    <option value="Oval" >Oval</option>
+                                    <option value="Custom Shape" >Custom Shape</option>
+                                </select>
                             </div>
-                            <div className="mr-8 float-left relative pt-1">
-                                <span className="float-left leading-8 mr-3 text-white text-sm font-bold ">H:</span>
-                                <input className="float-left h-8 w-12 px-4 text-center text-lg outline-none rounded-lg "/>
+                            <div className="w-auto float-left relative">
+                                <span className="float-left font-bold leading-10 mr-4 text-white">2).</span>
+                                <select className=" w-48 h-10 px-4 outline-none rounded-md text-lg float-left relative ">
+                                    <option value style={{display:"none"}}>Choose a size</option>
+                                    <option value="width=25&height=25">25*25mm</option>
+                                    <option value="width=37&height=37">37*37mm</option>
+                                    <option value="width=51&height=51">51*51mm</option>
+                                    <option value="width=62&height=62">62*62mm</option>
+                                </select>
+                                <a className="text-white leading-10 text-xs">
+                                    <span className="h-4 w-4 bg-[#1f5aff] font-bold leading-4 rounded-[50%] mx-1 px-1.5 ">i</span>
+                                    size guide
+                                </a>
                             </div>
-                            <a href="/quote/" className="float-right h-10 bg-yellow-300 text-black rounded-md leading-10 font-bold uppercase relative px-4  ">Continue</a>
+                            <span className="w-auto text-white text-base font-bold">
+                                <span className="mr-4">OR enter a custom size</span>
+                                <select className="outline-none h-7 w-20 rounded-lg text-black font-normal ">
+                                    <option>mm</option>
+                                    <option>cm</option>
+                                    <option>inch</option>
+                                </select>
+                            </span>
+                            <div className="w-auto ">
+                                <div className="mr-4 float-left relative pt-1">
+                                    <span className="float-left leading-8 mr-3 text-white text-sm font-bold ">W:</span>
+                                    <input className="float-left h-8 w-12 px-4 text-center text-lg outline-none rounded-lg "/>
+                                </div>
+                                <div className="mr-8 float-left relative pt-1">
+                                    <span className="float-left leading-8 mr-3 text-white text-sm font-bold ">H:</span>
+                                    <input className="float-left h-8 w-12 px-4 text-center text-lg outline-none rounded-lg "/>
+                                </div>
+                                <a href="/quote/" className="float-right h-10 bg-yellow-300 text-black rounded-md leading-10 font-bold uppercase relative px-4  ">Continue</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div className="block xl:hidden bg-[#00a0d2] w-[350px] h-[300px] items-center m-auto justify-between text-white">
+                        <div className="w-full relative text-left float-left text-white bg-[#0186af] font-bold px-5 py-[14px] text-lg "><span>Start by getting a price here</span></div>              
+                        <div className="p-5 ">
+                            <div className="w-auto float-left relative my-5">
+                                <span className="float-left font-bold leading-10 mr-4 text-white">1).</span>
+                                <select className=" w-48 h-10 px-4 outline-none rounded-md text-lg float-left relative ">
+                                    <option value style={{display:"none"}}>Choose a shape</option>
+                                    <option value="Square">Square</option>
+                                    <option value="Circle" >Circle</option>
+                                    <option value="Rectangle" >Rectangle</option>
+                                    <option value="Oval" >Oval</option>
+                                    <option value="Custom Shape" >Custom Shape</option>
+                                </select>
+                            </div>
+                            <div className="w-auto float-left relative mb-5">
+                                <span className="float-left font-bold leading-10 mr-4 text-white">2).</span>
+                                <select className=" w-48 h-10 px-4 outline-none rounded-md text-lg float-left relative ">
+                                    <option value style={{display:"none"}}>Choose a size</option>
+                                    <option value="width=25&height=25">25*25mm</option>
+                                    <option value="width=37&height=37">37*37mm</option>
+                                    <option value="width=51&height=51">51*51mm</option>
+                                    <option value="width=62&height=62">62*62mm</option>
+                                </select>
+                                <a className="text-white leading-10 text-xs">
+                                    <span className="h-4 w-4 bg-[#1f5aff] font-bold leading-4 rounded-[50%] mx-1 px-1.5 ">i</span>
+                                    size guide
+                                </a>
+                            </div>
+                            <span className="w-auto float-left text-white text-base font-bold mb-5">
+                                <span className="float-left mr-4">OR enter a custom size</span>
+                                <select className="outline-none float-left h-7 w-20 rounded-lg text-black font-normal ">
+                                    <option>mm</option>
+                                    <option>cm</option>
+                                    <option>inch</option>
+                                </select>
+                            </span>
+                            <div className="w-auto mt-5 ">
+                                <div className="mr-4 float-left relative pt-1">
+                                    <span className="float-left leading-8 mr-3 text-white text-sm font-bold ">W:</span>
+                                    <input className="float-left h-8 w-12 px-4 text-center text-lg outline-none rounded-lg "/>
+                                </div>
+                                <div className="mr-3 float-left relative pt-1">
+                                    <span className="float-left leading-8 mr-3 text-white text-sm font-bold ">H:</span>
+                                    <input className="float-left h-8 w-12 px-4 text-center text-lg outline-none rounded-lg "/>
+                                </div>
+                                <a href="/quote/" className="float-right h-10 bg-yellow-300 text-black rounded-md leading-10 font-bold uppercase relative px-4  ">Continue</a>
+                            </div>
                         </div>
                     </div>
-                    
-                </div>
-                <div className="block xl:hidden bg-[#00a0d2] w-[350px] h-[300px] items-center m-auto justify-between text-white">
-                    <div className="w-full relative text-left float-left text-white bg-[#0186af] font-bold px-5 py-[14px] text-lg "><span>Start by getting a price here</span></div>              
-                    <div className="p-5 ">
-                        <div className="w-auto float-left relative my-5">
-                            <span className="float-left font-bold leading-10 mr-4 text-white">1).</span>
-                            <select className=" w-48 h-10 px-4 outline-none rounded-md text-lg float-left relative ">
-                                <option value style={{display:"none"}}>Choose a shape</option>
-                                <option value="Square">Square</option>
-                                <option value="Circle" >Circle</option>
-                                <option value="Rectangle" >Rectangle</option>
-                                <option value="Oval" >Oval</option>
-                                <option value="Custom Shape" >Custom Shape</option>
-                            </select>
+                    <div className="w-auto xl:w-[1200px] lg:w-[970px] md:w-[750px] mx-auto text-white">
+                        <div className="my-8">
+                            <h2 className=" text-[36px] items-center">Our five promises</h2>
                         </div>
-                        <div className="w-auto float-left relative mb-5">
-                            <span className="float-left font-bold leading-10 mr-4 text-white">2).</span>
-                            <select className=" w-48 h-10 px-4 outline-none rounded-md text-lg float-left relative ">
-                                <option value style={{display:"none"}}>Choose a size</option>
-                                <option value="width=25&height=25">25*25mm</option>
-                                <option value="width=37&height=37">37*37mm</option>
-                                <option value="width=51&height=51">51*51mm</option>
-                                <option value="width=62&height=62">62*62mm</option>
-                            </select>
-                            <a className="text-white leading-10 text-xs">
-                                <span className="h-4 w-4 bg-[#1f5aff] font-bold leading-4 rounded-[50%] mx-1 px-1.5 ">i</span>
-                                size guide
-                            </a>
-                        </div>
-                        <span className="w-auto float-left text-white text-base font-bold mb-5">
-                            <span className="float-left mr-4">OR enter a custom size</span>
-                            <select className="outline-none float-left h-7 w-20 rounded-lg text-black font-normal ">
-                                <option>mm</option>
-                                <option>cm</option>
-                                <option>inch</option>
-                            </select>
-                        </span>
-                        <div className="w-auto mt-5 ">
-                            <div className="mr-4 float-left relative pt-1">
-                                <span className="float-left leading-8 mr-3 text-white text-sm font-bold ">W:</span>
-                                <input className="float-left h-8 w-12 px-4 text-center text-lg outline-none rounded-lg "/>
-                            </div>
-                            <div className="mr-3 float-left relative pt-1">
-                                <span className="float-left leading-8 mr-3 text-white text-sm font-bold ">H:</span>
-                                <input className="float-left h-8 w-12 px-4 text-center text-lg outline-none rounded-lg "/>
-                            </div>
-                            <a href="/quote/" className="float-right h-10 bg-yellow-300 text-black rounded-md leading-10 font-bold uppercase relative px-4  ">Continue</a>
-                        </div>
+                        <Promises1 title={promisesData[0].title} content={promisesData[0].content} image={promisesData[0].image} />
+                        <Promises1 title={promisesData[1].title} content={promisesData[1].content} image={promisesData[1].image} />
+                        <Promises1 title={promisesData[2].title} content={promisesData[2].content} image={promisesData[2].image} />
+                        <Promises2 title={promisesData[3].title} content={promisesData[3].content} image={promisesData[3].image} />
+                        <Promises2 title={promisesData[4].title} content={promisesData[4].content} image={promisesData[4].image} />                
                     </div>
-                </div>
-                <div className="w-auto xl:w-[1200px] lg:w-[970px] md:w-[750px] mx-auto text-white">
-                    <div className="my-8">
-                        <h2 className=" text-[36px] items-center">Our five promises</h2>
-                    </div>
-                    <Promises1 title={promisesData[0].title} content={promisesData[0].content} image={promisesData[0].image} />
-                    <Promises1 title={promisesData[1].title} content={promisesData[1].content} image={promisesData[1].image} />
-                    <Promises1 title={promisesData[2].title} content={promisesData[2].content} image={promisesData[2].image} />
-                    <Promises2 title={promisesData[3].title} content={promisesData[3].content} image={promisesData[3].image} />
-                    <Promises2 title={promisesData[4].title} content={promisesData[4].content} image={promisesData[4].image} />                
-                </div>
-                <div className=" flex flex-col md:flex-row text-white">
-                    <div className="w-full md:w-[50%] float-left relative px-[15px] ">
-                        <div className="w-auto md:float-right float-none mx-auto inline-block relative">
-                            <span className="block w-[55%] font-[100%] mb-2">
-                                <img className="w-full h-full " src={StarGreen} />
-                            </span>
-                            <span className="block mb-2 w-[94%] ">
-                                <img className="w-full h-full" src={StarRating} />
-                            </span>
-                            <span className=" text-sm leading-3 block  ">
-                            <span id="reviews-summary" class="tp-widget-businessinfo">
-                                <span aria-hidden="true" class="tp-widget-businessinfo__trustscore">TrustScore <strong id="trust-score">4.8</strong> | </span>
-                                <span class="tp-widget-businessinfo__total"><strong id="businessEntity-numberOfReviews-total">2,512</strong> <span id="translations-reviews">reviews</span></span>
-                            </span>
-                            </span>
-                        </div>
-                    </div>                    
-                    <div className="w-full md:w-[50%] mt-3 md:mt-0 relative float-left text-white ">
-                        <div className="w-[90%] float-left px-3 rounded-xl mt-30 relative md:w-[300px] md:float-none md:table md:mt-5 md:mb-2 lg:w-[400px] lg:h-[95px] bg-[#d63892]">
-                            <div className="w-[35%] md:w-[40%] lg:w-[35%] p-3 md:text-sm lg:text-base relative float-left ">
-                                <span>
-                                    <b>VIDEO:</b>
-                                    Watch how we make custom labels
+                    <div className=" flex flex-col md:flex-row text-white">
+                        <div className="w-full md:w-[50%] float-left relative px-[15px] ">
+                            <div className="w-auto md:float-right float-none mx-auto inline-block relative">
+                                <span className="block w-[55%] font-[100%] mb-2">
+                                    <img className="w-full h-full " src={StarGreen} />
+                                </span>
+                                <span className="block mb-2 w-[94%] ">
+                                    <img className="w-full h-full" src={StarRating} />
+                                </span>
+                                <span className=" text-sm leading-3 block  ">
+                                <span id="reviews-summary" class="tp-widget-businessinfo">
+                                    <span aria-hidden="true" class="tp-widget-businessinfo__trustscore">TrustScore <strong id="trust-score">4.8</strong> | </span>
+                                    <span class="tp-widget-businessinfo__total"><strong id="businessEntity-numberOfReviews-total">2,512</strong> <span id="translations-reviews">reviews</span></span>
+                                </span>
                                 </span>
                             </div>
-                            <div className="w-[40%] lg:w-[190px] relative float-left py-3 ">
-                                <img className="w-full h-full" src={VideoImage} />
-                            </div>
-                            <div className="w-20 h-20 bg-cover absolute right-[-40px] top-[50%] transform -translate-y-1/2 ">
-                                <img src={PlayButton} />
+                        </div>                    
+                        <div className="w-full md:w-[50%] mt-3 md:mt-0 relative float-left text-white ">
+                            <div className="w-[90%] float-left px-3 rounded-xl mt-30 relative md:w-[300px] md:float-none md:table md:mt-5 md:mb-2 lg:w-[400px] lg:h-[95px] bg-[#d63892]">
+                                <div className="w-[35%] md:w-[40%] lg:w-[35%] p-3 md:text-sm lg:text-base relative float-left ">
+                                    <span>
+                                        <b>VIDEO:</b>
+                                        Watch how we make custom labels
+                                    </span>
+                                </div>
+                                <div className="w-[40%] lg:w-[190px] relative float-left py-3 ">
+                                    <img className="w-full h-full" src={VideoImage} />
+                                </div>
+                                <div className="w-20 h-20 bg-cover absolute right-[-40px] top-[50%] transform -translate-y-1/2 ">
+                                    <img src={PlayButton} />
+                                </div>
                             </div>
                         </div>
                     </div>

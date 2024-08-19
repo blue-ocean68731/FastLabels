@@ -1,4 +1,4 @@
-import {BrowserRouter, Route, Routes} from "react-router-dom";
+import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import Dashboard from "./pages/dashboard";
 import Aboutus from "./pages/aboutus";
 import Requestsample from "./pages/requestsample";
@@ -13,21 +13,28 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App header-background">
-      <BrowserRouter>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Dashboard />} />
-          <Route path="/company/" element={<Aboutus />} /> 
-          <Route path="/requests-sample-pack" element={<Requestsample />} /> 
-          <Route path="/company/our-equipment" element={<Equipment />} /> 
-          <Route path="/testimonials" element={<Reviews />} /> 
-          <Route path="/sign-in" element={<Reorder />} /> 
-          <Route path="/contact" element={<Contactus />} /> 
-        </Routes>
-        <Footer />
-      </BrowserRouter>
+    <BrowserRouter>
+      <AppContent />
+    </BrowserRouter>
+  );
+}
 
+function AppContent() {
+  const location = useLocation();
+  
+  return (
+    <div className="App">
+      {location.pathname !== "/" && <Header />}
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/company/" element={<Aboutus />} /> 
+        <Route path="/requests-sample-pack" element={<Requestsample />} /> 
+        <Route path="/company/our-equipment" element={<Equipment />} /> 
+        <Route path="/testimonials" element={<Reviews />} /> 
+        <Route path="/sign-in" element={<Reorder />} /> 
+        <Route path="/contact" element={<Contactus />} /> 
+      </Routes>
+      <Footer />
     </div>
   );
 }
