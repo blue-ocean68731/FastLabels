@@ -29,8 +29,8 @@ code {
   background-size: cover;
 }
 
-.header-background-2{
-  background-image: url(../src/assets/img/308-background-small.jpg);
+.footer-background{
+  background-image: url(../src/assets/images/upsell-background.jpg);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
