@@ -91,11 +91,11 @@ const Dashboard = () => {
                                 <span className="float-left font-bold leading-10 mr-4 text-white">1).</span>
                                 <select className=" w-48 h-10 px-4 outline-none rounded-md text-lg float-left relative ">
                                     <option value style={{display:"none"}}>Choose a shape</option>
-                                    <option value="Square">Square</option>
-                                    <option value="Circle" >Circle</option>
-                                    <option value="Rectangle" >Rectangle</option>
-                                    <option value="Oval" >Oval</option>
-                                    <option value="Custom Shape" >Custom Shape</option>
+                                    <option value="Square">Squares</option>
+                                    <option value="Circle" >Circles</option>
+                                    <option value="Rectangle" >Rectangles</option>
+                                    <option value="Oval" >Ovals</option>
+                                    <option value="Custom Shape" >Custom Shapes</option>
                                 </select>
                             </div>
                             <div className="w-auto float-left relative">
